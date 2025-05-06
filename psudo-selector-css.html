@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal-External CSS</title>
+    <style>
+        p {
+            color: rgb(42, 247, 179);
+            background-color: azure;
+            font-size: 40px;
+            text-align: center;
+        }
+        p:hover {
+            background-color: brown;
+            color: aliceblue;
+        }
+        .class1:active {
+    color: aquamarine; /* When clicked */
+}
+
+.class1:visited {
+    color: yellow; /* Works only if the link has been visited */
+}
+
+.class1:hover {
+    color: red; /* Adds a hover effect */
+}
+        /* Corrected comment */
+        
+        #id1 {
+            color: antiquewhite;
+        }
+        .class2 {
+            color: aquamarine;
+        }
+        h1:nth-of-type(2n) {
+            font-style: italic;
+            font-size: 60px;
+        }
+        #input1:focus {
+            border: 6px solid;
+            border-color:  rgb(14, 199, 51);
+        }
+    </style>
+</head>
+<body>
+    <p>Hello world</p>
+    <a href="https://www.example.com" class="class1" target="_blank">Visit Example</a>
+    <h1>This is H1 tag</h1>
+    <h1 class="class2">This is H1 tag</h1>
+    <h1 class="class2">This is H1 tag</h1>
+    <h1 id="id1">This is H1 tag</h1>
+    <h1>This is H1 tag</h1>
+    <input id="input1" type="text" value="input">
+</body>
+</html>

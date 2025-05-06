@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Sibling Selector</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        h1 ~ p{
+            color:blue;
+            font-size: 20px;
+        }
+        h2 + p{
+            color: yellowgreen;
+            font-size: 20px;
+        }
+         div > div > p{
+            color: rgb(15, 233, 15);
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <h1>This is General Sibling Selector(~) </h1>
+    <p>this is p tag gonna affected with general sibling selector</p>
+    <p>this is p tag gonna affected with general sibling selector</p>
+    <p>this is p tag gonna affected with general sibling selector</p>
+    <div>this is div tag
+        <p>this is p tag NOT gonna affected with general sibling selector</p>
+        this is div tag
+    </div>
+    <p>this is p tag gonna affected with general sibling selector</p>
+    <p>this is p tag gonna affected with general sibling selector</p>
+    </div>
+    <br>
+    <div>
+    <h2>This is Adjecent Sibling Selector(+) </h2>
+    <p>this is p tag gonna affected with Adjecent Sibling selector</p>
+    <p>this is p tag NOT gonna affected with Adjecent Sibling selector</p>
+    <p>this is p tag NOT gonna affected with Adjecent Sibling selector</p>
+    </div>
+    <div>
+    <h3>This is Child Selector (>)</h3>
+    <p>this is p tag NOT gonna affected with Child selector</p>
+    <div>this is div tag
+        <p>this is p tag  gonna affected with child selector</p>
+        this is div tag
+    </div>
+    <p>this is p tag NOT gonna affected with child selector</p>
+</div>
+</body>
+</html>

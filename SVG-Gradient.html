@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <svg width="400" height="200" style="border: 1px,solid;">
+        <defs>
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color: aqua;"/>
+                <stop offset="100%" style="stop-color: yellow;"/>
+            </linearGradient>
+        </defs>
+        <rect x="80" y="80" width="200" height="100" fill="url(#grad1)">
+        </svg>
+    
+        <svg width="400" height="200" style="border: 1px,solid;">
+            <defs>
+                <radialGradient id="grad2" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                    <stop offset="0%" style="stop-color: aqua;"/>
+                    <stop offset="100%" style="stop-color: yellow;"/>
+                </radialGradient>
+            </defs>
+            <rect x="80" y="80" width="200" height="100" fill="url(#grad2)">
+            </svg>
+</body>
+</html>

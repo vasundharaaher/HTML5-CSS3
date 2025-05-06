@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myc" width="200" height="200" style="border: 1px solid;"> </canvas>
+    <script>
+        var c=document.getElementById("myc");
+        var ctx=c.getContext("2d");
+        ctx.beginPath(); // Start a new path
+        ctx.moveTo(0,0);
+        ctx.strokeStyle = "lime"; // Set the line color to yellow
+        ctx.lineWidth = 2; // Optional: Set line width
+        ctx.lineTo(100,100);
+        ctx.stroke();
+        
+        
+    </script>
+   <canvas id="myCanvas" width="400" height="400" style="border:1px solid #000;"></canvas>
+
+   <script>
+       // Get the canvas element
+       const canvas = document.getElementById("myCanvas");
+       const ctx2 = canvas.getContext("2d");
+
+       // Draw a circle
+       ctx2.beginPath();
+       ctx2.arc(200, 200, 100, 0, Math.PI * 2); // (x, y, radius, startAngle, endAngle)
+       ctx2.fillStyle = "blue"; // Fill color
+       ctx2.fill(); // Fill the circle
+       ctx2.stroke(); // Outline the circle
+   </script>
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+   </head>
+   <body>
+       <canvas id="myc" width="200" height="200" style="border: 1px solid;"> </canvas>
+       <script>
+           var c=document.getElementById("myc");
+           var ctx=c.getContext("2d");
+           ctx.beginPath(); // Start a new path
+           ctx.moveTo(0,0);
+           ctx.strokeStyle = "lime"; // Set the line color to yellow
+           ctx.lineWidth = 2; // Optional: Set line width
+           ctx.lineTo(100,100);
+           ctx.stroke();
+           
+           
+       </script>
+      
+   </body>
+   </html>
+</body>
+</html>

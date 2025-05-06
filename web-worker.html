@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>counter number: <output id="resullt"></output></p>
+    <button onclick="startWorker()">Start Worker</button>
+    <button onclick="stopWorker()">Stop Worker</button>
+    <script type="text/javascript">
+        var w;
+    function startWorker(){
+        if(typeof(Worker) != "undefined"){
+            if(typeof(w) != "undefined"){
+                w=new Worker(web_worker.js)
+            }
+            w.onmessage=function(event){
+                document.getElementById("result").innerHTML=event.data;
+            }
+        }else{
+            document.getElementById("result").innerHTML="your browser doesn't support web worker......"
+        }
+    }
+    function stopWorker(){
+        w.terminate()
+        w=undefined
+    }
+    </script>
+</body>
+</html>

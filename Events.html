@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sigleclick() {
+            // Get the button element by ID
+            let button = document.getElementById("onclick");
+            
+            // Change the CSS (e.g., background color and text color)
+            button.style.backgroundColor = "blue";
+            button.style.color = "white";
+        }
+        function dbclick() {
+            // Get the button element by ID
+            let button = document.getElementById("dbclick");
+            
+            // Change the CSS (e.g., background color and text color)
+            button.style.backgroundColor = "pink";
+            button.style.color = "white";
+        }
+        function mousedown(){
+            let area= document.getElementById("input");
+            area.style.background ="yellow";
+        }
+        function mousemove(){
+            let area=document.getElementById("textarea");
+            area.style.background="black"
+        }
+        function mouseout(){
+            let area=document.getElementById("textarea");
+            area.style.background="green"
+        }
+        function mouseover(){
+            let text=document.getElementById("hello");
+            text.style.color="pink"
+        }
+        function input(){
+            let text=document.getElementById("input");
+            text.style.color="blue";
+        }
+       
+        function keydrown(){
+            let drop=document.getElementById("drown")
+            drop.style.backgroundColor="yellow"
+
+        }
+        function key(){
+            let same=document.getElementById("uppress")
+            same.style.backgroundColor="pink"
+        }
+        function key1(){
+            let same=document.getElementById("press")
+            same.style.color="green"
+        }
+        
+    </script>
+</head>
+<body>
+    <h1>Mouse Event</h1>
+    <button id="onclick" onclick="sigleclick()">on single click</button>
+    <button id="dbclick" ondblclick="dbclick()">Double click</button>
+    <input type="text" id="input" onmousedown="mousedown()" oninput="input()"><br>
+    <textarea id="textarea" onmousemove="mousemove()" onmouseout="mouseout()"></textarea>
+    <h1 id="hello" onmouseover="mouseover()">Hello</h1><br>
+    <h1 id="h1">key board events</h1>
+    <form action="" method="get">
+        <label>downkey</label><input id="drown" type="text" onkeydown="keydrown()"><br>
+        <label>upkey </label><input id="uppress" type="text" onkeyup="key()" ><br>
+        <label>presskey</label><input id="press" type="text" onkeypress="key1()"><br>
+    <input id="name" type="submit" onsubmit><br>
+    <input id="reset" type="reset" onreset>
+</form>
+
+</body>
+</html>

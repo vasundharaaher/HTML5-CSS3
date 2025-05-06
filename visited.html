@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:visited Example</title>
+    <style>
+        /* Normal link (default state) */
+        .link {
+            color: blue;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        /* When the link has been visited */
+        .link:visited {
+            color: purple; /* Changes color after clicking */
+        }
+
+        /* Hover effect */
+        .link:hover {
+            color: red;
+        }
+
+        /* Active (while clicking) */
+        .link:active {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Click the link and then come back to see the color change</h2>
+    <a href="https://www.example.com" class="link" target="_blank">Visit Example</a>
+
+</body>
+</html>

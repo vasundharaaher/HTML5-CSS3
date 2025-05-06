@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>::before , ::selection , :: after pseudo element psedudo element</title>
+    <style rel="text/stylesheet">
+        h1::before{
+            content: "Hello--- ";
+            color: black;
+            font-size: 20px;
+            font-family:  Lucida Calligraphy;
+            text-shadow: 5px 8px 9px greenyellow;
+        }
+        h1{
+            color: blue;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h1::after{
+            content: "---The End";
+            color: black;
+            font-size: 20px;
+            font-family:  Lucida Calligraphy;
+            text-shadow: 5px 8px 9px rgb(6, 245, 241);
+        }
+        h1::selection{
+            background-color: aqua;
+            color: rgb(13, 18, 16);
+        }
+        #curvedarrow{
+            position: relative;
+            width: 0;
+            height: 0;
+            border-top: 30px solid transparent;
+            border-right: 30px solid red;
+            margin: 0 auto;
+            transform: rotate(10deg);
+        }
+        #curvedarrow::after{
+            content:"" ;
+            position: absolute;
+            border: 0 solid transparent;
+            border-top: 6px solid red;
+            border-radius: 20px 0 0;
+            top: -24px;
+            left: -11px;
+            width: 30px;
+            height: 30px;
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Once, there was a boy who became bored when he watched over the village sheep grazing on
+        the hillside. To entertain himself, he sang out, “Wolf! Wolf! The wolf is chasing the sheep!” 
+        When the villagers heard the cry, they ran up the hill to drive the wolf away. But when they 
+        arrived, they saw no wolf. <span id="curvedarrow"></span></h1>
+        <div id="curvedarrow"></div>
+        <h3>this is eg. of ::before , ::selection , :: after pseudo element</h3>
+</body>
+</html>

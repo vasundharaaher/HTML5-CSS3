@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #line{
+            margin: 0 auto;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            background-color: red;
+            animation: mythird 7s infinite;
+        }
+        @keyframes mythird{
+        0%{background-color: red;left: 0px;top: 0px;}
+        25%{background-color: blue;left: 100px;top: 0px;}
+        50%{background-color: green;left: 100px;top: 100px;}
+        75%{background-color: yellow;left: 0px;top: 100px;}
+        100%{background-color: red;left: 0px;top: 0px;}
+    }
+        #square{
+            width: 200px;
+            height: 200px;
+            position: relative;
+            background-color: red;
+            animation: myfirst 7s infinite, mysecond 7s infinite;
+            
+        }
+        @keyframes myfirst{
+            from{ background-color: red;}
+            from{ background-color: blue;}
+        }
+        @keyframes mysecond{
+            0% { transform: translate(0px) scale(2.5) rotate(90deg); }
+            90% { transform: translate(90px) scale(2) rotate(90deg); }
+            180% { transform: translate(180px) scale(1.5) rotate(180deg); }
+            270% { transform: translate(270px) scale(0) rotate(270deg); }
+            360% { transform: translate(360px) scale(1) rotate(360deg); }
+        }
+       
+    </style>
+</head>
+<body>
+    
+    <div id="line"></div>
+    <div id="square"></div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(img.jpg);
+        }
+        form{
+            color: azure;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header style="text-align: center; color: aquamarine; font-size: 30;font-style: italic;background-color: black;"><h1>Learn Vern</h1></header>
+    <nav style="text-align: center; color: rgb(75, 185, 224); font-size: 30;font-style: italic;background-color: black;"><h1><a href="list.html">All course</a></h1></nav>
+    <form action="form_submit.html" method="get">
+        <fieldset>
+        <legend style="font-style: italic;">Registration Form</legend>
+        <label>First Name : </label><input type="text" name="fnm">
+        <br><br>
+        <label>Email : </label><input type="email" name="egm">
+        <br><br>
+        <label>Subject Name : </label>
+            <ul type="dics">
+                <li>English :<input type="checkbox" name="sub" value="Eng"></li><br>
+                <li>Marathi :<input type="checkbox" name="sub" value="mth"></li><br>
+                <li>Math :<input type="checkbox" name="sub" value="math"></li><br>              
+            </ul>
+        <label>Gender : </label>
+            <ul>
+                <label>Female :</label><input type="radio" name="gender" >
+                <label>Male :</label><input type="radio" name="gender" >
+                <label>Other :</label><input type="radio" name="gender" >
+            </ul>
+        <br>
+        <label>Password : </label><input type="password" name="password">
+        <br><br>
+        <label>Message for Us :</label><textarea></textarea>
+        <br><br>
+        <input type="submit" value="submit">
+        </fieldset>
+    </form>
+    <footer style="align-content: center;background-color: black;color: bisque;font-size: 23px;">
+        No copy right &copy;
+    </footer>
+</body>
+</html>
